@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  <!-- LOGIN FORM -->
+  form(action='/users/signup', method='post')
+    div.form-group
+      label Email
+      input(type='text', class='form-control', name='email')    
+    div.form-group
+      label Contraseña
+      input(type='password', class='form-control', name='password')    
+    div.form-group
+      label Confirma tu Contraseña
+      input(type='password', class='form-control', name='password2')    
+    button(type='submit', class='btn btn-warning btn-lg') Registrate
+    if message
+      span= message
+  form(action='/users/auth/facebook', method='get')
+    button(type='submit', class='btn btn-warning btn-lg') Facebook Login
+

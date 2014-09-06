@@ -1,18 +1,29 @@
 {
-  "name": "share-ride",
-  "version": "0.0.0",
+  "name": "lukami",
+  "version": "0.0.1",
   "private": true,
   "scripts": {
     "start": "node ./bin/www"
   },
   "dependencies": {
-    "express": "~4.8.6",
-    "body-parser": "~1.6.6",
-    "cookie-parser": "~1.3.2",
-    "morgan": "~1.2.3",
-    "serve-favicon": "~2.0.1",
-    "debug": "~1.0.4",
-    "jade": "~1.5.0",
-    "stylus": "0.42.3"
+    "bcrypt-nodejs": "latest",
+    "body-parser": "~1.0.0",
+    "connect-flash": "~0.1.1",
+    "cookie-parser": "~1.0.1",
+    "debug": "~0.7.4",
+    "express": "~4.2.0",
+    "express-session": "~1.0.0",
+    "fb": "0.7.0",
+    "jade": "~1.3.0",
+    "lodash": "~2.4.1",
+    "morgan": "~1.0.0",
+    "passport": "~0.1.17",
+    "passport-facebook": "~1.0.2",
+    "passport-local": "~0.1.6",
+    "pg": "^3.4.1",
+    "postgresql": "0.0.1",
+    "sequelize": "^2.0.0-dev9",
+    "static-favicon": "~1.0.0",
+    "node-uuid": "1.4.1"
   }
 }

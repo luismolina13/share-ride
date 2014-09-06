@@ -1,0 +1,16 @@
+extends layout
+
+block content
+  <!-- LOGIN FORM -->
+  form(action="/users/login" method="post")
+    div.form-group
+      label Email
+      input(type="text", class="form-control", name="email")    
+    div.form-group
+      label Contraseña
+      input(type="password", class="form-control", name="password")    
+    button(type="submit", class="btn btn-warning btn-lg") Login
+    if message
+      span= message
+  form(action='/users/auth/facebook', method='get')
+    button(type="submit", class="btn btn-warning btn-lg") Facebook Login
