@@ -1,4 +1,12 @@
 extends layout
 
 block content
-    h1 Hello World
+    script(type='text/javascript' src='http://maps.googleapis.com/maps/api/js?libraries=places')
+    script(type='text/javascript' src='javascript/address_autocomplete.js')
+    p Where to?
+    .row
+        .col-sm-11
+            input#search_box(type='text', placeholder='Start typing here...')
+        .col-sm-1
+            button.btn#search_btn(type='submit') 
+                span.glyphicon.glyphicon-search

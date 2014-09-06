@@ -38,10 +38,10 @@ html
                         ul(class=['nav', 'navbar-nav', 'navbar-right'])
                             if !user
                                 li
-                                    a(href='/users/login') Login
+                                    a(href='/users/auth/facebook') Login
                             else
                                 li
-                                    a(href='/users/#{user.id}') Hola, #{user.local_firstName}
+                                    a(href='/users/#{user.id}') Hi, #{user.local_firstName}
                                 li
                                     a(href='/users/logout') Logout
             //- include mixins
